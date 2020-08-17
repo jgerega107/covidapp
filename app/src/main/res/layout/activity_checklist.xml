@@ -59,9 +59,8 @@
                             android:scaleX="3"
                             android:scaleY="3"
                             android:src="@drawable/ic_fever"
+                            android:onClick="onClicked"
 
-                            android:clickable="true"
-                            android:onClick="checkMark"
                            />
 
                         <TextView
@@ -80,7 +79,6 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toChecklistActivity"
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -96,7 +94,9 @@
                             android:layout_margin="41dp"
                             android:scaleX="3.1"
                             android:scaleY="3.1"
-                            android:src="@drawable/ic_cough" />
+                            android:src="@drawable/ic_cough"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -129,7 +129,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_breath" />
+                            android:src="@drawable/ic_breath"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -146,7 +148,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -155,14 +157,16 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/about_img"
+                            android:id="@+id/fatigue_img"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_fatigue" />
+                            android:src="@drawable/ic_fatigue"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -179,7 +183,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -203,7 +207,9 @@
                             android:layout_gravity="center"
                             android:text="Muscle or body aches"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimary" />
+                            android:textColor="@color/colorPrimary"
+                            android:onClick="onClicked"
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -212,7 +218,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -228,7 +234,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_headache" />
+                            android:src="@drawable/ic_headache"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -245,7 +253,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -261,7 +269,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_headache" />
+                            android:src="@drawable/ic_headache"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -278,7 +288,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -294,7 +304,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_sorethroat" />
+                            android:src="@drawable/ic_sorethroat"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -311,7 +323,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -327,7 +339,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_tissue" />
+                            android:src="@drawable/ic_tissue"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -335,7 +349,9 @@
                             android:layout_gravity="center"
                             android:text="Congestion or runny nose"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimary" />
+                            android:textColor="@color/colorPrimary"
+                            android:onClick="onClicked"
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -344,7 +360,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -360,7 +376,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_vomit" />
+                            android:src="@drawable/ic_vomit"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -378,7 +396,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:onClick="toAboutActivity"
+
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -394,7 +412,9 @@
                             android:layout_margin="40dp"
                             android:scaleX="3"
                             android:scaleY="3"
-                            android:src="@drawable/ic_toilet" />
+                            android:src="@drawable/ic_toilet"
+                            android:onClick="onClicked"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
