@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, PLACEHOLDER!"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:layout_margin="20dp"
+        />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:text="COVID CHATROOM"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <Button
+            android:text="COVID Advice"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <Button
+            android:text="Sign out"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <Button
+            android:text="About"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+    </GridLayout>
+
+</LinearLayout>
