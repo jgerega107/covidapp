@@ -28,4 +28,12 @@ public class MenuActivity extends AppCompatActivity {
     public void toChecklistActivity(View view){
         startActivity(new Intent(getApplicationContext(), ChecklistActivity.class));
     }
+
+    public void toChatActivity(View view){
+        startActivity(new Intent(getApplicationContext(), ChatActivity.class));
+    }
+
+    public void toMapActivity(View view){
+        startActivity(new Intent(getApplicationContext(), MapActivity.class));
+    }
 }
