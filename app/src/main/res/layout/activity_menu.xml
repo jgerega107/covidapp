@@ -15,6 +15,7 @@
         android:textSize="30sp"
         android:fontFamily="sans-serif"
         android:layout_margin="20dp"
+        android:id="@+id/welcome_text"
         />
     <GridLayout
         android:layout_width="wrap_content"
@@ -27,7 +28,8 @@
             android:layout_height="150dp"
             android:layout_width="150dp"
             android:layout_margin="10dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:id="@+id/chat_button">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -54,7 +56,9 @@
             android:layout_height="150dp"
             android:layout_width="150dp"
             android:layout_margin="10dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:id="@+id/checklist_button"
+            android:onClick="toChecklistActivity">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -81,7 +85,8 @@
             android:layout_height="150dp"
             android:layout_width="150dp"
             android:layout_margin="10dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:id="@+id/map_button">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,7 +113,9 @@
             android:layout_height="150dp"
             android:layout_width="150dp"
             android:layout_margin="10dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:id="@+id/about_button"
+            android:onClick="toAboutActivity">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
