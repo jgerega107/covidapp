@@ -34,6 +34,6 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void toMapActivity(View view){
-        startActivity(new Intent(getApplicationContext(), MapActivity.class));
+        startActivity(new Intent(getApplicationContext(), MapsActivity.class));
     }
 }

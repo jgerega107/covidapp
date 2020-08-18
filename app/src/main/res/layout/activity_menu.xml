@@ -4,139 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
     <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
         android:text="Welcome, PLACEHOLDER!"
         android:textColor="@color/colorPrimary"
-        android:layout_gravity="center"
-        android:textSize="30sp"
-        android:fontFamily="sans-serif"
-        android:layout_margin="20dp"
-        android:id="@+id/welcome_text"
-        />
+        android:textSize="30sp" />
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        >
+        android:layout_marginTop="100dp"
+        android:columnCount="2">
+
         <androidx.cardview.widget.CardView
-            android:layout_height="150dp"
-            android:layout_width="150dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="10dp"
             android:id="@+id/chat_button"
-            android:onClick="toChatActivity">
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="toChatActivity"
+            app:cardCornerRadius="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_message_24"
                     android:layout_gravity="center"
+                    android:layout_margin="40dp"
                     android:scaleX="3"
                     android:scaleY="3"
-                    android:layout_margin="40dp"/>
+                    android:src="@drawable/ic_baseline_message_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="Chat with others in quarantine"
-                    android:textColor="@color/colorPrimary"
                     android:textAlignment="center"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            android:layout_height="150dp"
-            android:layout_width="150dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="10dp"
             android:id="@+id/checklist_button"
-            android:onClick="toChecklistActivity">
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="toChecklistActivity"
+            app:cardCornerRadius="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_check_24"
                     android:layout_gravity="center"
+                    android:layout_margin="40dp"
                     android:scaleX="3"
                     android:scaleY="3"
-                    android:layout_margin="40dp"/>
+                    android:src="@drawable/ic_baseline_check_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="COVID-19 Checklist"
-                    android:textColor="@color/colorPrimary"
                     android:textAlignment="center"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            android:layout_height="150dp"
-            android:layout_width="150dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="10dp"
             android:id="@+id/map_button"
-            android:onClick="toMapActivity">
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="toMapActivity"
+            app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_map_24"
                     android:layout_gravity="center"
+                    android:layout_margin="40dp"
                     android:scaleX="3"
                     android:scaleY="3"
-                    android:layout_margin="40dp"/>
+                    android:src="@drawable/ic_baseline_map_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="Nearby testing locations"
-                    android:textColor="@color/colorPrimary"
                     android:textAlignment="center"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            android:layout_height="150dp"
-            android:layout_width="150dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="10dp"
             android:id="@+id/about_button"
-            android:onClick="toAboutActivity">
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="toAboutActivity"
+            app:cardCornerRadius="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_description_24"
                     android:layout_gravity="center"
+                    android:layout_margin="40dp"
                     android:scaleX="3"
                     android:scaleY="3"
-                    android:layout_margin="40dp"/>
+                    android:src="@drawable/ic_baseline_description_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="About the developers"
-                    android:textColor="@color/colorPrimary"
                     android:textAlignment="center"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
