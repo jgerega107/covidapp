@@ -25,18 +25,27 @@ public class SplashActivity extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                List<AuthUI.IdpConfig> providers = Arrays.asList(
-                        new AuthUI.IdpConfig.GoogleBuilder().build(),
-                        new AuthUI.IdpConfig.EmailBuilder().build());
-                startActivityForResult(
-                        AuthUI.getInstance()
-                                .createSignInIntentBuilder()
-                                .setAvailableProviders(providers)
-                                .setLogo(R.drawable.ic_baseline_healing_red)
-                                .setTheme(R.style.AppTheme)
-                                .setIsSmartLockEnabled(false)
-                                .build(),
-                        RC_SIGN_IN);
+
+                if(FirebaseAuth.getInstance().getCurrentUser() == null){
+                    List<AuthUI.IdpConfig> providers = Arrays.asList(
+                            new AuthUI.IdpConfig.GoogleBuilder().build(),
+                            new AuthUI.IdpConfig.EmailBuilder().build());
+                    startActivityForResult(
+                            AuthUI.getInstance()
+                                    .createSignInIntentBuilder()
+                                    .setAvailableProviders(providers)
+                                    .setLogo(R.drawable.ic_baseline_healing_red)
+                                    .setTheme(R.style.AppTheme)
+                                    .setIsSmartLockEnabled(false)
+                                    .build(),
+                            RC_SIGN_IN);
+                }
+                else{
+                    // signed in, now load main menu
+                    startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                    //finish so user can't press back
+                    finish();
+                }
             }
         }, 2000);
 
