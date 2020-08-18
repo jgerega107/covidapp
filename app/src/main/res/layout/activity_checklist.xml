@@ -19,6 +19,12 @@
         android:layout_margin="20dp"
         android:id="@+id/checklistText"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you check 5 or more of these symptoms, consider seeing a health specialist for testing."
+        android:gravity="center"/>
+
 
     <ScrollView
         android:layout_width="match_parent"

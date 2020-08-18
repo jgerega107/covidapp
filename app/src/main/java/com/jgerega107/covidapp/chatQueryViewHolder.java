@@ -33,7 +33,9 @@ public class chatQueryViewHolder extends RecyclerView.ViewHolder {
         TextView messagetext = view.findViewById(R.id.message_textview);
         TextView authordate = view.findViewById(R.id.authordate_textview);
 
-        Glide.with(view).load(pfpUrl).into(pfp);
+        if(!pfpUrl.equals("")){
+            Glide.with(view).load(pfpUrl).into(pfp);
+        }
         messagetext.setText(message);
         StringBuilder authorAndDate = new StringBuilder();
         authorAndDate.append(author);
