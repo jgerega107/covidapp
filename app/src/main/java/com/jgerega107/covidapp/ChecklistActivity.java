@@ -26,6 +26,7 @@ public class ChecklistActivity extends AppCompatActivity {
     ImageView con;
     ImageView vomit;
     ImageView dir;
+    ImageView check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class ChecklistActivity extends AppCompatActivity {
         con = (ImageView) findViewById(R.id.con_img);
         vomit = (ImageView) findViewById(R.id.vomit_img);
         dir = (ImageView) findViewById(R.id.dir_img);
+
 
     }
     public void onClicked(View v){
