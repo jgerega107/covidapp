@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutActivity">
+    tools:context=".AboutActivity"
+    android:orientation = "vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the developers"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:layout_margin="50dp"
+        android:id="@+id/devText"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:layout_gravity="center"
+        >
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flipOnTouch="true"
+            app:flipEnabled="true"
+            app:flipDuration="400"
+            app:flipFrom="right"
+            app:flipType="horizontal"
+            app:autoFlipBack="false"
+            >
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/dh_card_back"/>
+
+            <!-- Front Layout Goes Here -->
+            <include layout="@layout/dh_card_front"/>
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flipOnTouch="true"
+            app:flipEnabled="true"
+            app:flipDuration="400"
+            app:flipFrom="right"
+            app:flipType="horizontal"
+            app:autoFlipBack="false"
+            >
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/dev_card_back"/>
+
+            <!-- Front Layout Goes Here -->
+            <include layout="@layout/dev_card_front"/>
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+
+    </GridLayout>
+</LinearLayout>

@@ -44,14 +44,6 @@ public class ChecklistActivity extends AppCompatActivity {
         vomit = (ImageView) findViewById(R.id.vomit_img);
         dir = (ImageView) findViewById(R.id.dir_img);
 
-        //fever.setOnClickListener((View.OnClickListener) this);
-        //cough.setOnClickListener((View.OnClickListener) this);
-        //breathe.setOnClickListener((View.OnClickListener) this);
-
-        //final GridLayout symptomGrid = (GridLayout) findViewById(R.id.symptomGrid);
-        //final int count = symptomGrid.getChildCount();
-        //final ImageView fever = (ImageView) findViewById(R.id.fever_img);
-        //fever.setOnClickListener(new View.OnClickListener() {
     }
     public void onClicked(View v){
         switch (v.getId()) {
